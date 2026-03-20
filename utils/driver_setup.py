@@ -6,7 +6,6 @@ from selenium.webdriver.chrome.options import Options
 def get_driver():
 
     chrome_options = Options()
-    chrome_options.binary_location = "/usr/bin/chromium-browser"
     chrome_options.add_argument("--headless")  # run without UI
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
